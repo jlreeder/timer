@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 def set_timer(minutes)
   puts "Timer set for #{minutes} minutes"
   timer(minutes)
