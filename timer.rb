@@ -1,3 +1,7 @@
+def notify(message, title)
+  system("terminal-notifier -message \"#{message}\" -title \"#{title}\"")
+end
+
 if __FILE__ == $PROGRAM_NAME
-  puts 'Hello, world.'
+  notify("test message", "message")
 end
