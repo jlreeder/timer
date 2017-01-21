@@ -1,13 +1,14 @@
 def set_timer(minutes)
   puts "Timer set for #{minutes} minutes"
   timer(minutes)
-  notify(minutes_message(minutes))
+  body, title = minutes_message(minutes)
+  notify(body, title)
 end
 
 def timer(minutes)
   i = 0
   until i == minutes
-    sleep(50)
+    sleep(1)
     i += 1
     print "#{i} "
   end
@@ -18,7 +19,7 @@ def notify(body, title)
 end
 
 def minutes_message(minutes)
-  ["#{minutes} complete", 'Timer Complete']
+  ["#{minutes} minutes have passed", 'Timer Complete']
 end
 
 if __FILE__ == $PROGRAM_NAME
