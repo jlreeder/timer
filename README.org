@@ -1,0 +1,2 @@
+#+TITLE: Timer
+A simple timer and pomodoro script for the command line.
