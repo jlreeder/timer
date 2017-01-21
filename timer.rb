@@ -11,7 +11,7 @@ end
 def timer(minutes)
   i = 0
   until i >= minutes
-    sleep(1)
+    sleep(60)
     i += 1
     print "#{i} "
   end
