@@ -3,11 +3,12 @@ def set_timer(minutes)
   timer(minutes)
   body, title = minutes_message(minutes)
   notify(body, title)
+  puts "\nComplete"
 end
 
 def timer(minutes)
   i = 0
-  until i == minutes
+  until i >= minutes
     sleep(1)
     i += 1
     print "#{i} "
@@ -23,5 +24,5 @@ def minutes_message(minutes)
 end
 
 if __FILE__ == $PROGRAM_NAME
-  set_timer(10)
+  set_timer(ARGV[0].to_i)
 end
