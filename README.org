@@ -1,4 +1,14 @@
 #+TITLE: Timer
-A simple timer and pomodoro script for the command line.
+A simple timer and pomodoro script for the command line. After the timer
+is complete, an OS notification will pop up on your screen. 
+
+To use call the script name along with the {number of minutes} and the {task}
+- With a single-word task
+  : ruby timer.rb 20 knitting
+- With a multi-word task
+  : ruby timer.rb 2 'base jumping'
+- Without a task
+  : ruby timer.rb 30
 * Requirements
+- Mac OS
 - terminal-notifier (a command-line app)
