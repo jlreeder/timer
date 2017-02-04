@@ -14,4 +14,4 @@ notification when the timer is complete.
   : ruby timer.rb 2 base jumping
 * Requirements
 - Mac OS
-- terminal-notifier (a command-line app)
+- [[https://github.com/julienXX/terminal-notifier][terminal-notifier]] (a command-line app)
