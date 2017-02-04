@@ -30,7 +30,7 @@ def process_time(raw_time)
 end
 
 def process_task(raw_task)
-  raw_task.capitalize || 'Timer complete'
+  raw_task.nil? ? 'Timer complete' : raw_task.capitalize
 end
 
 if __FILE__ == $PROGRAM_NAME
