@@ -30,9 +30,9 @@ def process_time(raw_time)
 end
 
 def process_task(raw_task)
-  raw_task.nil? ? 'Timer complete' : raw_task.capitalize
+  raw_task.nil? ? 'Timer complete' : raw_task.join(' ').capitalize
 end
 
 if __FILE__ == $PROGRAM_NAME
-  set_timer(process_time(ARGV[0]), process_task(ARGV[1]))
+  set_timer(process_time(ARGV[0]), process_task(ARGV[1..-1]))
 end
